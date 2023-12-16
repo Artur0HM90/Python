@@ -8,6 +8,8 @@ print(type("Hola Python")) # tipo 'str'
 print(type(165145))        # tipo 'int'
 print(type(165145.546))    # tipo 'float'
 print(type(1 + 1j))        # tipo 'complex'
+print(type(True))          # tipo 'bool'
+print(type(print('cosa rara')))
 
 """
 
