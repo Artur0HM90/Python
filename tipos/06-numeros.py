@@ -15,6 +15,5 @@ print(1 - 3)
 print(1 * 3)
 print(1 / 3)
 print(1 // 3)
-# cuando se utiliza en simbolo de porcentaje nos dice tienes que regresar el RESTO
 print(8 % 3)
 print(2 ** 3)  # El simbolo de ** es para elevar un número
