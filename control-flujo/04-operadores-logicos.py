@@ -16,7 +16,6 @@ carro = True
 if casa or carro:
     print("Puedes descansar")
 
-
 print("Operador logico NOT cambia el valor si es falso lo va a cambiar a verdadero")
 
 gas = False
