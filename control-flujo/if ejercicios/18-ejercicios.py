@@ -13,6 +13,3 @@ elif segundo_numero > primer_numero:
 
 elif primer_numero == segundo_numero:
     print(f"Los dos números son iguales {primer_numero} - {segundo_numero}")
-
-else:
-    print("Error debes ingresar números.")

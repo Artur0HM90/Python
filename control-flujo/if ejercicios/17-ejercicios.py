@@ -28,3 +28,4 @@ if pizza == 1:
 1. {primer_ingredientes_vegetarianos}.
 2. {segundo_ingredientes_vegetarianos}.
 3. Desea los dos ingredientes.""")
+        
