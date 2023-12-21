@@ -20,4 +20,4 @@ if ingrese_numero > 0:
                 print(par)
 
 else:
-    print("Denes ingresar un número positivo")
+    print("Denes ingresar un número positivo y mayor a cero.")
