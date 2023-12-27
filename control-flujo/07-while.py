@@ -5,8 +5,13 @@
 #    numero *= 2
 
 
-comando = ""
+#comando = ""
+#while comando.lower() != "salir":
+#    comando = input("$: ")
+#    print(comando)
 
-while comando.lower() != "salir":
-    comando = input("$: ")
+while True:
+    comando = input("$ ")
     print(comando)
+    if comando.lower() == "salir":
+        break
