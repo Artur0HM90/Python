@@ -2,8 +2,11 @@
 
 print ("Adivina el número mayor.")
 print("Ingresa 'a' o la 'b' ")
+intento = 1
 
-while True:
+while intento <= 3:
+    print(f"Intento {intento}.")
+    intento += 1
 
     eligue = (str(input("Que vas eleguir a - b: "))).lower()
 
@@ -15,4 +18,3 @@ while True:
 
     else:
         print("Debes eleguir una de las 2 opciones que te dimos.")
-        
