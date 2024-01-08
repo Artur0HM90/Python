@@ -13,4 +13,4 @@ def contar_hasta():
     return numeros
 
 resultado = contar_hasta()
-print(f"Primer número ingresado es: {resultado}")
+print(f"Primer número ingresado es: {resultado}.")
