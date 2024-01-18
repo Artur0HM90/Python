@@ -8,7 +8,9 @@ def division (primer_numero, segundo_numero):
 primer_numero = int(input("Ingresa primer número: "))
 segundo_numero = int(input("Ingresa segundo número: "))
 resultado_division = division(primer_numero, segundo_numero)
-if 
+if resultado_division:
+    if segundo_numero == 0: 
+        print("error")
     
 else:
     print(f"El resultado es: {resultado_division} - ERROR.")
