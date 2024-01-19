@@ -11,6 +11,5 @@ resultado_division = division(primer_numero, segundo_numero)
 if resultado_division:
     if segundo_numero == 0: 
         print("error")
-    
 else:
     print(f"El resultado es: {resultado_division} - ERROR.")
