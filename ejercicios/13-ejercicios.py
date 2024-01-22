@@ -1,15 +1,13 @@
 """
 Crea una función recursiva para calcular el factorial de un número dado.
 """
-def factorial(n):
-    # Caso base
-    if n == 0 or n == 1:
+ingresa_nunmero = int(input("Ingresa un número: "))
+def factorial(ingresa_nunmero): 
+    if ingresa_nunmero == 0 or ingresa_nunmero == 1:
         return 1
-    # Caso recursivo
     else:
-        return n * factorial(n - 1)
+        resultado = ingresa_nunmero * factorial(ingresa_nunmero - 1)
+        return resultado
 
-# Ejemplo de uso
-numero = 5
-resultado = factorial(numero)
-print(f"El factorial de {numero} es {resultado}")
+resultado = factorial(ingresa_nunmero)
+print(f"El factorial de {ingresa_nunmero}! es: {resultado}")
