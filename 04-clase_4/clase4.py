@@ -31,6 +31,6 @@ print(len(apellidos))
 
 # Pero hay funciones propias de este tipo de datos que es el STRING que se llaman metodos hay que tener cuidado ya que una sintaxis diferente a las funciones.
 
-print(nombres.lower()) # El metodo LOWER funciona para que el string este en minuscaula
-print(nombres.upper()) # El metodo UPPER funciona para que el string este en mayuscula
-print(apellidos.strip()) # El metodo STRIP funciona para que el string este elimine todos los espacios
+print(nombres.lower()) # El metodo LOWER funciona para que el string este en minuscaula.
+print(nombres.upper()) # El metodo UPPER funciona para que el string este en mayuscula.
+print(apellidos.strip()) # El metodo STRIP funciona para que el string este elimine todos los espacios.
