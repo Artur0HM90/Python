@@ -33,4 +33,4 @@ print(len(apellidos))
 
 print(nombres.lower()) # El metodo LOWER funciona para que el string este en minuscaula
 print(nombres.upper()) # El metodo UPPER funciona para que el string este en mayuscula
-print(nombres.strip()) # El metodo STRIP funciona para que el string este elimine todos los espacios
+print(apellidos.strip()) # El metodo STRIP funciona para que el string este elimine todos los espacios
