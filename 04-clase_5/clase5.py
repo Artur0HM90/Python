@@ -21,4 +21,3 @@ is_false = False
 
 print(is_tru)
 print(type(is_false))
-print("Nunca" "pares" "de" "aprender", sep=", ")
