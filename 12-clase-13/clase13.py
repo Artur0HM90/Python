@@ -21,5 +21,5 @@ while x < 5:
 numbers = [1, 2, 3, 4, 5, 6]
 for i in numbers:
     if i == 3:
-        continue
+        continue # se imprime todo menos el 3
     print(f"Aqui i es igual a: {i + 1}")
