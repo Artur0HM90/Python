@@ -12,7 +12,7 @@ def calcualdora(primerNumero, segundoNumero, operacion):
             return primerNumero / segundoNumero
     else:
         return "Operación no valida"
-
+    
 opcion = """QUE VAS ELEGIR: 
 ---------------
 1. SUMA
@@ -29,7 +29,7 @@ try:
     
     numero_uno = float(input("Ingresa el primer número: "))
     numero_dos = float(input("Ingresa el segundo número: "))
-    
+
     operaciones = {
         1: "suma",
         2: "resta",
