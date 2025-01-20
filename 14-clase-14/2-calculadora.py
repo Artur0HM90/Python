@@ -1,17 +1,17 @@
-def suma(primer_numero, segundo_numero):
-    return primer_numero + segundo_numero
-
-def resta(primer_numero, segundo_numero):
-    return primer_numero - segundo_numero
-
-def multiplicacion(primer_numero, segundo_numero):
-    return primer_numero * segundo_numero
-
-def division(primer_numero, segundo_numero):
-    if segundo_numero == 0:
-        print("NO SE PUEDE DIVIDIR.")
+def calcualdora(primerNumero, segundoNumero, operacion):
+    if operacion == "suma":
+        return primerNumero + segundoNumero
+    elif operacion == "resta":
+        return primerNumero - segundoNumero
+    elif operacion == "multiplicacion":
+        return primerNumero * segundoNumero
+    elif operacion == "division":
+        if segundoNumero == 0:
+            return "NO SE PUEDE DIVIDIR"
+        else:
+            return primerNumero / segundoNumero
     else:
-        return primer_numero / segundo_numero
+        return "Operación no valida"
 
 opcion = """QUE VAS ELEGIR: 
 ---------------
@@ -21,19 +21,27 @@ opcion = """QUE VAS ELEGIR:
 4. DIVISIÓN
 """
 print(opcion)
-elegir = int(input("Elige entre 1 - 4: ")) 
 
-numero_uno = float(input("Ingresa el primer número: "))
-numero_dos = float(input("Ingresa el segundo número: "))
+try:
+    elegir = int(input("Elige entre 1 - 4: ")) 
+    if elegir not in [1,2,3,4]:
+        raise ValueError("Opción fuera de rango.")
+    
+    numero_uno = float(input("Ingresa el primer número: "))
+    numero_dos = float(input("Ingresa el segundo número: "))
+    
+    operaciones = {
+        1: "suma",
+        2: "resta",
+        3: "multiplicación",
+        4: "división"
+    }
 
-match elegir:
-    case 1: 
-        resultado = suma(numero_uno, numero_dos)
-    case 2:
-        resultado = resta(numero_uno, numero_dos)
-    case 3:
-        resultado = multiplicacion(numero_uno, numero_dos)
-    case 4:
-        resultado = division(numero_uno, numero_dos)
+    resultado = calcualdora(numero_uno, numero_dos, operaciones[elegir])
+    print(f"El resultado es: {resultado}")
 
-print(f"El resulta es {resultado}")
+except ValueError as e:
+    print(f"Error: {e}")
+
+except Exception as e:
+    print(f"Error inesperado: {e}")
